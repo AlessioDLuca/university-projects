@@ -9,19 +9,20 @@ Each project is stored in a dedicated folder and includes **Jupyter notebooks, r
 
 ### 🛥️ **The Airbus Ship Detection Challenge**  
 - **📃 Description:** Ship detection using satellite imagery, leveraging deep learning techniques for segmentation.  
-- **💡 Topics:** Computer Vision, Segmentation, Remote Sensing  
+- **💡 Topics:** Computer Vision, Segmentation, Connected Component Analysis
+ 
 
 ### 🌳 **Vegetation Damage Assessment from the 2017 Split Fire (Sentinel-2 Remote Sensing)**  
 - **📃 Description:** Analysis of vegetation damage caused by the 2017 Split Fire in Croatia using Sentinel-2 imagery and remote sensing techniques.  
-- **💡 Topics:** Remote Sensing, GIS, Satellite Image Analysis  
+- **💡 Topics:** Remote Sensing, Satellite Image Analysis  
 
 ### ⚕️ **AI Solutions for Healthcare**  
 - **📃 Description:** Application of AI in healthcare, including medical image analysis and predictive modeling.  
-- **💡 Topics:** Healthcare AI, Deep Learning, Medical Imaging  
+- **💡 Topics:** Healthcare ML/AI, Deep Learning, Medical Imaging  
 
 ### 🍔 **Food Image Classification**  
 - **📃 Description:** Classification of different food items using deep learning models.  
-- **💡 Topics:** Computer Vision, Image Classification  
+- **💡 Topics:** Computer Vision, Image Classification, Deep Learning, Self-Supervised Learning, SIFT-BoW  
 
 ### 🔄 **Unsupervised Anomaly Detection**  
 - **📃 Description:** Identifying anomalies in datasets using unsupervised machine learning techniques.  
@@ -33,11 +34,11 @@ Each project is stored in a dedicated folder and includes **Jupyter notebooks, r
 
 ### 🍎 **Deep Learning for Fruit Classification and Freshness Detection**  
 - **📃 Description:** Optimization and explainability of deep learning models for fruit classification and freshness detection.  
-- **💡 Topics:** Computer Vision, Explainable AI, Classification  
+- **💡 Topics:** Computer Vision, Explainable AI, Classification, Pruning 
 
 ### ☁️ **Cloud Masking in Satellite Images: U-Net vs. K-Means**  
 - **📃 Description:** A comparative study of U-Net and K-Means clustering for cloud masking in satellite imagery.  
-- **💡 Topics:** Computer Vision, Remote Sensing, Segmentation  
+- **💡 Topics:** Computer Vision, Remote Sensing, Segmentation, Unsupervised Clustering  
 
 ---
 
