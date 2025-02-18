@@ -29,7 +29,7 @@ This project focuses on **ship detection in satellite imagery** using deep learn
    ```  
 3. **Note**: The trained model weights (`ResNet101.pth`) **are not included in this repository due to file size limitations**. Download them separately from Kaggle:  
    - **Kaggle Model Path:** [alessiodeluca12/resnet101deluca](https://www.kaggle.com/alessiodeluca12/resnet101deluca)  
-   - Place the downloaded weights in the appropriate directory and update the model path in `main.py` (line 105).  
+   - Place the downloaded weights in the appropriate directory and update the model path in `StreamlitDashboard.py` (line 105).  
 
 ---
 
@@ -41,24 +41,11 @@ This project focuses on **ship detection in satellite imagery** using deep learn
 
 ---
 
-## 📂 File Structure  
-```
-/airbus-ship-detection/
-│── DeLucaNotebook.ipynb  # Training & Inference Notebook
-│── main.py               # Streamlit dashboard for testing
-│── README.md             # Project documentation
-│── DashboardImages/      # Folder with test images (upload separately)
-│── model/                # Placeholder for model weights (ResNet101.pth)
-```
-
----
 
 ## 🎯 Future Improvements  
 - Enhance segmentation accuracy using **data augmentation**.  
 - Experiment with **transformer-based vision models**.  
 - Optimize inference speed for **real-time applications**.  
 
----
 
-🚀 Let me know if you need any modifications!
 
