@@ -1,27 +1,43 @@
-University Projects 📚
-Welcome to my University Projects repository! Here, I organize and showcase various projects I worked on during my academic journey. These include coursework, research, and personal explorations related to AI, machine learning, finance, and more.
+# 🎓 University Projects - Master's in Artificial Intelligence for Science and Technology  
 
-📂 Projects Included
-🔹 [Project Name] – Short description of the project.
-🔹 [Project Name] – Short description of the project.
-🔹 [Project Name] – Short description of the project.
-📜 Structure
-Each project is stored in its own folder and may contain:
+This repository contains projects developed during my **Master's in Artificial Intelligence for Science and Technology**. The projects cover various domains, including computer vision, remote sensing, healthcare AI, and anomaly detection.
 
-📒 Jupyter Notebooks (.ipynb)
-📄 Academic Papers (.pdf)
-📑 Reports & Documentation (.md / .pdf)
-🖥️ Source Code (if applicable)
-🛠 How to Use
-Browse through the projects and select the one you’re interested in.
-Download the notebook (.ipynb) or open it in Google Colab.
-Check out the corresponding report for detailed explanations.
-🚀 Topics Covered
-Machine Learning & AI
-Finance & Quantitative Analysis
-Natural Language Processing
-Speech Analysis
-Computer Vision
-Cloud Masking (Satellite Images)
-📌 About Me
-I am passionate about AI, quantitative finance, and applied research. This repository serves as a collection of my academic projects, showcasing my learning process and technical skills.
+## 📂 Projects Overview  
+
+Each project is stored in a dedicated folder and includes Jupyter notebooks, reports, and relevant documentation.
+
+### 🔹 **The Airbus Ship Detection Challenge**
+- **Description:** Ship detection using satellite imagery, leveraging deep learning techniques for segmentation.
+- **Topics:** Computer Vision, Segmentation, Remote Sensing  
+
+### 🔹 **Vegetation Damage Assessment from the 2017 Split Fire (Sentinel-2 Remote Sensing)**
+- **Description:** Analysis of vegetation damage caused by the 2017 Split Fire in Croatia using Sentinel-2 imagery and remote sensing techniques.
+- **Topics:** Remote Sensing, GIS, Satellite Image Analysis  
+
+### 🔹 **AI Solutions for Healthcare**
+- **Description:** Application of AI in healthcare, including medical image analysis and predictive modeling.
+- **Topics:** Healthcare AI, Deep Learning, Medical Imaging  
+
+### 🔹 **Food Image Classification**
+- **Description:** Classification of different food items using deep learning models.
+- **Topics:** Computer Vision, Image Classification  
+
+### 🔹 **Unsupervised Anomaly Detection**
+- **Description:** Identifying anomalies in datasets using unsupervised machine learning techniques.
+- **Topics:** Anomaly Detection, Unsupervised Learning, Data Analysis  
+
+### 🔹 **Fluent Speech AI Coach**
+- **Description:** A speech analysis system to assist in pronunciation training and fluency improvement.
+- **Topics:** Natural Language Processing, Speech Analysis  
+
+### 🔹 **Deep Learning for Fruit Classification and Freshness Detection**
+- **Description:** Optimization and explainability of deep learning models for fruit classification and freshness detection.
+- **Topics:** Computer Vision, Explainable AI, Classification  
+
+### 🔹 **Cloud Masking in Satellite Images: U-Net vs. K-Means**
+- **Description:** A comparative study of U-Net and K-Means clustering for cloud masking in satellite imagery.
+- **Topics:** Computer Vision, Remote Sensing, Segmentation  
+
+## 🗂 Repository Structure  
+
+Each project is structured as follows:
