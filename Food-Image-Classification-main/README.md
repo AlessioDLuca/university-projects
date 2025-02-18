@@ -69,6 +69,6 @@ To handle **class imbalance**:
 ---
 
 ## 📚 Acknowledgments
-This project was developed with the collaboration of **Alessio De Luca** and **Simone Vaccari**. A detailed explanation of the methodology and results can be found in the full [report](https://github.com/ywdavi/Food-Image-Classification/blob/main/Report.pdf).
+This project was developed with the collaboration of **Davide Vettore** and **Simone Vaccari**. A detailed explanation of the methodology and results can be found in the full [report](https://github.com/ywdavi/Food-Image-Classification/blob/main/Report.pdf).
 
 ---
