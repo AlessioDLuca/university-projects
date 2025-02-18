@@ -73,6 +73,6 @@ Both projects highlight the power of **machine learning** in **healthcare diagno
 ---
 
 ## 📚 Acknowledgments  
-This project was developed in collaboration with **Simone Vaccari, Alessio De Luca, and Davide Vettore**.
+This project was developed in collaboration with **Simone Vaccari** and **Davide Vettore**.
 ---
 
