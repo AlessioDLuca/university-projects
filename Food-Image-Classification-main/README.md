@@ -1,71 +1,74 @@
-# Comparative Analysis of SIFT/BoW, CNNs, and SSL Techniques for Image Classification
+# 🍔 Comparative Analysis of SIFT/BoW, CNNs, and SSL Techniques for Image Classification
 
-## Description
-This project compares three different techniques for food image classification on the iFood-2019 dataset: SIFT with Bag-of-Words (BoW), Convolutional Neural Networks (CNNs), and Self-Supervised Learning (SSL). Each method addresses the challenge of classifying food images into 251 categories, focusing on capturing relevant features and improving model accuracy despite class similarities and variations.
+## 📃 Project Overview
+This project explores three different techniques for **food image classification** on the **iFood-2019 dataset**: 
+- **SIFT with Bag-of-Words (BoW)** 
+- **Convolutional Neural Networks (CNNs)** 
+- **Self-Supervised Learning (SSL)**
 
-## Objectives
-- **Classify food images** into one of the 251 categories using three distinct methods.
-- **Explore the effectiveness** of traditional and deep learning models in handling the complexity of food classification.
-- **Handle class imbalance** and optimize model performance within a _constraint of fewer than one million parameters_.
+Each method addresses the challenge of classifying food images into **251 categories**, with a focus on extracting relevant features and improving model accuracy despite class similarities and variations.
 
-## The Dataset
-The iFood-2019 dataset is used for the classification task, consisting of:
-- **Training set**: 118,475 samples.
-- **Validation set**: 11,994 images (used as the test set in this project).
-- **Test set**: 28,377 images (not used as ground truth labels are unavailable).
+---
 
-To handle **class imbalance**, downsampling was applied to over-represented classes, and upsampling with transformations like rotation and color jittering was used for under-represented classes.
+## 🔍 Objectives
+- 🌟 **Classify food images** into 251 categories using three distinct methods.
+- 🌟 **Compare traditional vs. deep learning approaches** in handling fine-grained food classification.
+- 🌟 **Optimize model performance** while maintaining a constraint of **fewer than one million parameters**.
 
-## Methodologies
+---
 
-### 1. Feature Extraction Approach (SIFT + BoW)
-- **SIFT (Scale-Invariant Feature Transform)** was used to extract keypoints from images, invariant to scale and rotation.
-- A **Bag-of-Words (BoW)** model was applied to quantize these features into visual words, creating a histogram for each image.
-- A traditional classifier was then trained on these histograms for classification.
+## 📝 Dataset
+The **iFood-2019 dataset** consists of:
+- **Training set**: 118,475 images
+- **Validation set**: 11,994 images _(used as the test set in this project)_
+- **Test set**: 28,377 images _(not used due to unavailable ground truth labels)_
 
-### 2. Convolutional Neural Networks (CNNs)
-- A CNN architecture was built with fewer than one million parameters, using **depthwise separable convolutions** to reduce computational costs.
-- **Data augmentation** was applied during training to enhance the model's generalization, including operations like flipping, rotation, and color jitter.
-- The final CNN architecture achieved the best performance after 50 epochs of training.
+To handle **class imbalance**:
+- Over-represented classes were **downsampled**.
+- Under-represented classes were **upsampled** using transformations like rotation and color jittering.
 
-### 3. Self-Supervised Learning (SSL)
-- A **pretext task** was used to train the model to solve a Jigsaw Puzzle (dividing images into patches and shuffling them).
-- The features learned through the SSL task were extracted and used to train a logistic regression classifier for the final classification task.
+---
 
-## Key Steps
+## 🛠️ Methodologies
 
-### Data Preparation
-- **Class imbalance was addressed** using downsampling and upsampling with transformations.
-- The images were resized to **256x256 pixels**, normalized, and augmented to improve generalization.
+### 🛡️ SIFT + BoW Approach
+- **Feature Extraction**: SIFT (Scale-Invariant Feature Transform) was used to extract keypoints, capturing essential image structures.
+- **Clustering**: MiniBatch K-means clustering was applied to create a vocabulary of **visual words**.
+- **BoW Model**: Each image was represented as a histogram of visual words, used as input for a traditional classifier.
 
-### SIFT + BoW Approach
-- **Keypoint extraction**: The SIFT algorithm was used to extract keypoints from each image, focusing on edges and textures.
-- **Clustering**: Keypoint descriptors were quantized into **visual words** using MiniBatch K-means clustering.
-- **BoW Model**: Each image was represented as a histogram of visual words, capturing the distribution of features in the image.
-- **Classification**: A traditional classifier was trained on these histograms to classify the food images into 251 categories.
+### 🌐 Convolutional Neural Networks (CNNs)
+- A CNN architecture was designed using **depthwise separable convolutions** to reduce computational costs.
+- **Data augmentation** techniques (flipping, rotation, color jitter) were applied to improve generalization.
+- The final model had **983,323 parameters**, staying within the constraint.
 
-### CNN Design
-- The CNN used **depthwise separable convolutions** and **Global Average Pooling (GAP)** to reduce the number of parameters.
-- The final model consisted of **983,323 parameters**, meeting the project’s constraint.
+### 🧩 Self-Supervised Learning (SSL)
+- A **Jigsaw Puzzle pretext task** was implemented, where images were divided into patches and shuffled.
+- The model was trained to predict the correct positions of these patches, learning meaningful **spatial features**.
+- Extracted features were used to train a logistic regression classifier for the final classification task.
 
-### SSL Task
-- A **Jigsaw Puzzle pretext task** was implemented, where the model learned to predict the correct positions of shuffled image patches, extracting meaningful spatial features.
+---
 
-## Results
-
+## 📊 Results
 | Model             | Accuracy (Test Set) |
 |-------------------|---------------------|
-| SIFT + BoW        | 6.26%               |
-| CNN (50 Epochs)   | 36.84%              |
-| SSL               | 9.52%               |
+| 🛡️ SIFT + BoW        | 6.26%               |
+| 🌐 CNN (50 Epochs)   | 36.84%              |
+| 🧩 SSL               | 9.52%               |
 
-- **CNN** outperformed both the feature extraction and SSL approaches, achieving an accuracy of **36.84%** after 50 epochs.
-- The SSL approach showed that models trained for fewer epochs on the pretext task provided better features for classification.
+- **CNN** significantly outperformed the other methods, achieving **36.84% accuracy** after 50 epochs.
+- The **SSL method** showed potential but needs further refinement.
+- The **SIFT + BoW** approach struggled due to the dataset's complexity, emphasizing the limitations of traditional feature extraction.
 
-## Conclusion
-The CNN approach proved most effective for food image classification, benefiting from deep feature extraction and data augmentation. The SSL method, while less effective than CNN, demonstrated potential for further exploration with different pretext tasks. The SIFT + BoW method struggled due to the complexity of the dataset, highlighting the limitations of traditional feature extraction in fine-grained visual categorization tasks.
+---
 
-## Acknowledgments
-The detailed methodology, results, and scientific analysis of this project are thoroughly presented in the accompanying [report](https://github.com/ywdavi/Food-Image-Classification/blob/main/Report.pdf). This project was developed with the help and collaboration of **Alessio De Luca** and **Simone Vaccari**.
+## 📝 Conclusion
+- **CNNs were the most effective** due to their ability to extract high-level features and leverage data augmentation.
+- **SSL showed promise** but needs improved pretext tasks for better feature learning.
+- **Traditional feature extraction (SIFT + BoW) struggled** with this fine-grained classification task.
 
+---
 
+## 📚 Acknowledgments
+This project was developed with the collaboration of **Alessio De Luca** and **Simone Vaccari**. A detailed explanation of the methodology and results can be found in the full [report](https://github.com/ywdavi/Food-Image-Classification/blob/main/Report.pdf).
+
+---
