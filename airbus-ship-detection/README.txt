@@ -19,29 +19,29 @@ This project focuses on **ship detection in satellite imagery** using deep learn
 - If using **Kaggle**, ensure the dataset is loaded into the environment.
 
 ### **2️⃣ Running the Streamlit Dashboard**  
-1. Install dependencies:
+1. Install dependencies:  
    ```bash
    pip install torch torchvision streamlit segmentation-models-pytorch
-   ```
-2. Run the **Streamlit app**:
+   ```  
+2. Run the **Streamlit app**:  
    ```bash
    streamlit run main.py
-   ```
-3. **Note**: The trained model weights (`ResNet101.pth`) **are not included in this repository due to file size limitations**. Download them separately from Kaggle:
-   - **Kaggle Model Path:** [alessiodeluca12/resnet101deluca](https://www.kaggle.com/alessiodeluca12/resnet101deluca)
-   - Place the downloaded weights in the appropriate directory and update the model path in `main.py` (line 105).
+   ```  
+3. **Note**: The trained model weights (`ResNet101.pth`) **are not included in this repository due to file size limitations**. Download them separately from Kaggle:  
+   - **Kaggle Model Path:** [alessiodeluca12/resnet101deluca](https://www.kaggle.com/alessiodeluca12/resnet101deluca)  
+   - Place the downloaded weights in the appropriate directory and update the model path in `main.py` (line 105).  
 
 ---
 
-## 🎨 Test Images  
+## 🖼️ Test Images  
 - A folder named **`DashboardImages/`** contains test images for inference.  
 - The model works best on **satellite images** of ships.  
 
-🛡️ **Using random images (e.g., a family dinner) may result in false ship detections!**  
+⚠️ **Using random images (e.g., a family dinner) may result in false ship detections!**  
 
 ---
 
-## 📚 File Structure  
+## 📂 File Structure  
 ```
 /airbus-ship-detection/
 │── DeLucaNotebook.ipynb  # Training & Inference Notebook
@@ -53,13 +53,12 @@ This project focuses on **ship detection in satellite imagery** using deep learn
 
 ---
 
-## 🔄 Future Improvements  
+## 🎯 Future Improvements  
 - Enhance segmentation accuracy using **data augmentation**.  
 - Experiment with **transformer-based vision models**.  
 - Optimize inference speed for **real-time applications**.  
 
 ---
 
-🚀 Let me know if you need any modifications! 🚀
-
+🚀 Let me know if you need any modifications!
 
