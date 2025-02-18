@@ -67,7 +67,7 @@ The dataset consists of **15 categorical** and **6 continuous** features, with v
 ---
 
 ## 📚 Acknowledgments  
-This project was conducted as part of the **Artificial Intelligence for Science and Technology Master's Program** by **Alessio De Luca** and **Camilla Tomasoni**. The full report detailing methodology, analysis, and results is available for further insights.
+This project was made in collaboration with **Camilla Tomasoni**. The full report detailing methodology, analysis, and results is available for further insights.
 
 ---
 
